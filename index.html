@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <title>Predra Papel Tesoura</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Pedra, Papel e Tesoura</h1>
+            <img src="./assets/pedra-papel-tesoura.png" alt="">
+
+        </header>
+
+        <div id="jogo">
+
+            <div id="placar">
+                0 : 0
+            </div>
+
+            <div class="inputsJogo">
+                <div id="jogador1">
+                    <h3>Você</h3>
+                    <label for="escolhaJogador1">Sua escolha: </label>
+                    <input type="text" id="escolhaJogador1" required>
+                </div>
+                <div id="jogador2">
+                    <h3>Jogador 2</h3>
+                    <label for="escolhaJogador2">Escolha do Jogador 2: </label>
+                    <p id="escolhaJogador2"></p>
+                </div>
+            </div>
+            <button id="butaoJogar" onclick="jogar()">Jogar!</button>
+            <h3 id="resultado"></h3>
+            <button id="butaoRecomecar" onclick="location.reload()">Recomeçar!</button>
+        </div>
+
+    </div>
+</body>
+</html>

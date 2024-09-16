@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Press Start 2P", system-ui;
+    color: #212529;
+}
+
+body {
+    background-color: rgba(220, 220, 220, 0.874);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    text-align: center;
+    width: 85%;
+}
+
+header h1{
+    font-size: 35px;
+    margin: 29px 0;
+}
+
+header img {
+    width: 600px;
+}
+
+#jogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    background-color: white;
+    border-radius: 25px;
+    border: 4px solid black;
+}
+
+#placar {
+    background-color: black;
+    border-radius: 10px;
+    padding: 15px 10px;
+    margin: 20px;
+    width: 250px;
+    color: red;
+    font-size: 28px;
+}
+
+.inputsJogo {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#jogador1, #jogador2 {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#jogador1 input {
+    height: 35px;
+    width: 130px;
+    color: #302e2f;
+    font-family: cursive;
+    background-color: rgb(240, 240, 240);
+    border: 3px solid #39db77;
+    border-radius: 8px;
+    font-size: 18px;
+    margin: 0 auto;
+    padding-left: 10px;
+}
+
+#butaoJogar {
+    height: 70px;
+    width: 190px;
+    background-color: #f7d51d;
+    box-shadow: inset -4px -4px #e59400;
+    border: 4px solid #212529;
+    border-radius: 25px;
+    font-size: 22px;
+    padding: 1rem 1.5rem;
+    margin: 4px;
+}
+
+#butaoJogar:hover {
+    background-color: #d7bb1b;
+    box-shadow: inset -3px -3px #c68100;
+}
+
+#butaoRecomecar {
+    height: 75px;
+    width: 270px;
+    color: #ececec;
+    background-color: #c91316;
+    box-shadow: inset -4px -4px #8c2022;
+    border: 4px solid #212529;
+    border-radius: 25px;
+    font-size: 22px;
+    padding: 1rem 1.5rem;
+    margin: 4px;
+}
+
+#butaoRecomecar:hover {
+    color: #c2c0c0;
+    background-color: #9b1214;
+    box-shadow: inset -3px -3px #6a191a;
+}
